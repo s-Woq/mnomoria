@@ -1,0 +1,65 @@
+---
+import usericon from "../components/img/person-circle-outline.svg";
+import homeicon from "../components/img/home-outline.svg";
+import helpicon from "../components/img/help-circle-outline.svg";
+import logo from "../components/img/logo.png";
+import briefcaseicon from "../components/img/briefcase-outline.svg";
+import exit from "../components/img/exit-outline.svg";
+---
+
+<div class="flex flex-col items-center bg-black  gap-5 p-0  h-screen">
+  <!-- Navbar -->
+  <ul class="p-4 bg-[#070000] w-full h-full flex flex-col items-center justify-evenly">
+    <li class=" h-24 w-24">
+      <img src={logo.src ?? logo} alt="logo" class="w-full h-full" />
+    </li>
+
+    <!-- Home -->
+    <li class="group relative overflow-hidden hover:bg-blue-600  hover:shadow-[0_0_15px_3px_rgba(125,139,174,0.8)] rounded-full w-12 h-14 hover:w-32 transition-all duration-300 cursor-pointer flex items-center">
+      <span class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 transition-transform duration-300 group-hover:-translate-x-[60px]">
+        <img src={homeicon.src ?? homeicon} alt="Home Icon" class="w-6 h-6 invert opacity-50" />
+      </span>
+      <span class="absolute left-14 opacity-0 text-white transition-opacity duration-300 group-hover:opacity-100">
+        Home
+      </span>
+    </li>
+
+    <!-- About -->
+    <li class="group relative overflow-hidden hover:bg-blue-600  hover:shadow-[0_0_15px_3px_rgba(125,139,174,0.8)] rounded-full w-12 h-14 hover:w-32 transition-all duration-300 cursor-pointer flex items-center">
+      <span class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 transition-transform duration-300 group-hover:-translate-x-[60px]">
+        <img src={helpicon.src ?? helpicon} alt="About Icon" class="w-6 h-6 invert brightness-0 opacity-50" />
+      </span>
+      <span class="absolute left-14 opacity-0 text-white transition-opacity duration-300 group-hover:opacity-100">
+        About
+      </span>
+    </li>
+
+    <!-- Services -->
+    <li class="group relative overflow-hidden hover:bg-blue-600  hover:shadow-[0_0_15px_3px_rgba(125,139,174,0.8)] rounded-full w-12 h-14 hover:w-36 transition-all duration-300 cursor-pointer flex items-center">
+      <span class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 transition-transform duration-300 group-hover:-translate-x-[60px]">
+        <img src={briefcaseicon.src ?? briefcaseicon} alt="Services Icon" class="w-6 h-6 invert brightness-0 opacity-50" />
+      </span>
+      <span class="absolute left-14 opacity-0 text-white transition-opacity duration-300 group-hover:opacity-100">
+        Services
+      </span>
+    </li>
+
+    <!-- Profile -->
+    <li class="group relative overflow-hidden hover:bg-blue-600  hover:shadow-[0_0_15px_3px_rgba(125,139,174,0.8)] rounded-full w-12 h-14 hover:w-36 transition-all duration-300 cursor-pointer flex items-center">
+      <span class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 transition-transform duration-300 group-hover:-translate-x-[60px]">
+        <img src={usericon.src ?? usericon} alt="Contact Icon" class="w-6 h-6 invert brightness-0 opacity-50" />
+      </span>
+      <span class="absolute left-14 opacity-0 text-white transition-opacity duration-300 group-hover:opacity-100">
+        Profile
+      </span>
+    </li>
+
+    <!-- Logout -->
+    <li class="group relative overflow-hidden hover:bg-red-700 hover:shadow-[0_0_15px_3px_rgba(125,139,174,0.8)] rounded-full w-12 h-14 hover:w-32 transition-all duration-300 cursor-pointer flex items-center">
+      <span class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center w-12 h-12 transition-transform duration-300 group-hover:-translate-x-[60px]">
+        <img src={exit.src ?? exit} alt="logout" class="w-6 h-6 invert brightness-0 opacity-50" />
+      </span>
+      <span class="absolute left-14 opacity-0 text-white transition-opacity duration-300 group-hover:opacity-100">Log Out</span>
+    </li>
+  </ul>
+</div>
