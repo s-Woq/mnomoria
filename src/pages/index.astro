@@ -1,8 +1,9 @@
 ---
 // import Layouttrial from '../components/layout.astro';
 import { Fragment } from 'astro/jsx-runtime';
-import Main from '../components/main.astro';
+import Landing from "../layouts/Landing.astro"
 import Layout from '../layouts/Layout.astro';
+import Login from './login.astro';
 import Navbar from '../components/navbar.astro';
 import MainLayout from '../layouts/MainLayout.astro';
 
@@ -11,5 +12,5 @@ import MainLayout from '../layouts/MainLayout.astro';
 ---
 
 <Layout >
-  <MainLayout />
+  <Landing />
 </Layout>
